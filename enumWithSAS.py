@@ -33,7 +33,7 @@ signal.signal(signal.SIGINT, def_handler)
 terminal_size = os.get_terminal_size()
 
 def helpPanel():
-    print(colors.RED + "\n[!] Usage: {}".format(os.path.basename(sys.argv[0])) + colors.END)
+    print(colors.RED + "\n[!] Usage: {}".format(os.path.basename(sys.argv[0])) + " "*40 + colors.TURQUOISE + "Invertebrado" + colors.END)
     print(colors.RED + "─"*80 + colors.END)
     print("\n\t" + colors.BLUE + "\u2503" + colors.PURPLE + "  [-lc] [--listContainers]    " + colors.YELLOW + "List Containers" + colors.END)
     print("\t" + colors.BLUE + "\u2503" + colors.PURPLE + "  [-lb] [--listBlobs]         " + colors.YELLOW + "List Blobs" + colors.END)
