@@ -21,12 +21,12 @@ commands = ["-lc", "--listContainers", "-lb", "--listBlobs", "-gb", "--getBlob",
 options = ["lc", "listContainers", "lb", "listBlobs", "gb", "getBlob", "cb", "createBlob", "db", "deleteBlob", "cp", "copyBlob", "h", "help"]
 
 def def_handler(sig, frame):
-    if cmd == commands[-3] or cmd == commands[-4]:
-        print("")
-        log.failure("Use [ exit / quit / q ] to exit.\n")
-    else:
-        print(colors.RED + "\n[!] Exiting..." + colors.END)
-        sys.exit(1)
+    #if cmd == commands[-3] or cmd == commands[-4]:
+    #    print("")
+    #    log.failure("Use [ exit / quit / q ] to exit.\n")
+    #else:
+    print(colors.RED + "\n[!] Exiting..." + colors.END)
+    sys.exit(1)
 
 signal.signal(signal.SIGINT, def_handler)
 
